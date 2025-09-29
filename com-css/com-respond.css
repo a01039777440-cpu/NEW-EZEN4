@@ -51,9 +51,9 @@
     }
 
 
-    .accord .active {
+    /* .accord-list .active {
         width: 576px;
-    }
+    } */
 
     .accord-list .active .accord-title {
         margin-bottom: 90px;
@@ -84,6 +84,10 @@
         align-items: center;
     }
 
+    .about-us-list .sub-text {
+        font-size: 1.8rem;
+    }
+
     .help .main-text,
     .global .main-text,
     .money .main-text {
@@ -101,30 +105,45 @@
     }
 
     .help .sub-text {
-        right: 50px;
+        right: 0;
+    }
+
+    .help .sub-text::before {
+        z-index: -1;
+        right: 0;
     }
 
     .help .sub-text::after {
-        right: -30px;
+        right: 0;
     }
 
     .global .sub-text {
         bottom: 280px;
-        left: 110px;
+        left: 60px;
+    }
+
+    .global .sub-text::before {
+        z-index: -1;
+        width: 410px;
+    }
+
+    .global .sub-text::after {
+        left: 0px;
     }
 
     .money .sub-text {
         bottom: 70px;
-        right: 200px;
+        right: 90px;
     }
 
     .money .sub-text::before {
         width: 350px;
-        left: -170px;
+        /* left: -250px; */
+        z-index: -1;
     }
 
     .money .sub-text::after {
-        left: 170px;
+        left: 150px;
     }
 
     /* vision */
@@ -132,9 +151,9 @@
         width: 90px;
     }
 
-    .accord-list .active {
+    /* .accord-list .active {
         width: 550px;
-    }
+    } */
 
     /* footer */
     footer .inner {
@@ -182,6 +201,7 @@
     /* vision */
     .accord-list {
         flex-direction: column;
+        gap:20px;
     }
 
     .accord-list>div {
@@ -218,7 +238,7 @@
     }
 
     .accord-list .active {
-        width:676px;
+        /* width:676px; */
         height: 400px;
         padding: 10px 20px;
     }
@@ -232,10 +252,11 @@
     }
 
     .accord-list .active .num-btn {
-        position: absolute;
+        /* position: absolute;
         bottom: 30px;
         left: 80px;
-        display: block;
+        display: block; */
+        display: none;
     }
 
     .accord-list .active .accord-title {
@@ -266,7 +287,12 @@
 
     /* about us */
     .about-us .sub-text {
-        font-size: 1.3rem;
+        font-size: 1.64rem;
+    }
+
+    .help .main-text {
+        width: 320px;
+        height: 320px;
     }
 
     .help .sub-text {
@@ -280,7 +306,12 @@
     }
 
     .help .sub-text::after {
-        right: -30px;
+        right: 0;
+    }
+
+    .global .main-text {
+        width: 250px;
+        height: 250px;
     }
 
     .global .sub-text {
@@ -294,7 +325,8 @@
     }
 
     .global .sub-text::after {
-        right: 150px;
+        /* right: 280px; */
+        left: -8px;
     }
 
     .money .sub-text {
@@ -321,8 +353,31 @@
         padding: 0 10px;
     }
 
+    .about-us-list .sub-text::before{
+        display:none;
+    }
+
+    /* .help .sub-text {
+        right: 0;
+    }
+
+    .global .sub-text {
+        right: 0;
+    }
+
+    .global .sub-text::after {
+        left: 0;
+    }
+
+    .money .sub-text {
+        right: 0;
+    }
+
+    .money .sub-text::after {
+        right: 0;
+    } */
+
     .about-us-list {
-        /* position:static; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -332,8 +387,7 @@
     }
 
     .about-us-list .sub-text {
-        /* position:static; */
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .about-us-list .main-text {
@@ -350,11 +404,12 @@
         top: 120px;
     }
 
-    .help .sub-text::before {
+    /* .help .sub-text::before {
         width: 450px;
         left: auto;
         right: 0;
-    }
+        z-index:-1;
+    } */
 
     .help .sub-text::after {
         right: 0;
@@ -377,13 +432,15 @@
         bottom: 250px;
     }
 
-    .global .sub-text::before {
+    /* .global .sub-text::before {
         right: 0;
         width: 500px;
-    }
+        z-index:-1;
+    } */
 
     .global .sub-text::after {
         right: 0;
+        left:auto;
     }
 
     .money .main-text {
@@ -397,11 +454,12 @@
         bottom: 50px;
     }
 
-    .money .sub-text::before {
+    /* .money .sub-text::before {
         right: 0;
         left: auto;
         width: 550px;
-    }
+        z-index:-1;
+    } */
 
     .money .sub-text::after {
         right: 0;
@@ -459,7 +517,6 @@
     }
 
     .about-us-list {
-        /* position:static; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -469,8 +526,7 @@
     }
 
     .about-us-list .sub-text {
-        /* position:static; */
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .about-us-list .main-text {
@@ -478,8 +534,8 @@
     }
 
     .help .main-text {
-        width: 300px;
-        height: 300px;
+        width: 260px;
+        height: 260px;
     }
 
     .help .sub-text {
@@ -488,9 +544,6 @@
     }
 
     .help .sub-text::before {
-        /* width: 350px;
-        left: auto;
-        right: 0; */
         display: none;
     }
 
@@ -504,31 +557,28 @@
     }
 
     .global .main-text {
-        width: 250px;
-        height: 250px;
+        width: 210px;
+        height: 210px;
     }
 
     .global .sub-text {
         text-align: right;
         right: 0;
         left: auto;
-        bottom: 240px;
+        bottom: 200px;
     }
 
     .global .sub-text::before {
-        /* right: 0;
-        width: 400px; */
         display: none;
     }
 
     .global .sub-text::after {
-        /* right: 0; */
         top: -20px;
     }
 
     .money .main-text {
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
         bottom: 70px;
     }
 
@@ -538,17 +588,13 @@
     }
 
     .money .sub-text::before {
-        /* right: 0;
-        left: auto;
-        width: 450px; */
         display: none;
     }
 
     .money .sub-text::after {
-        /* right: 0;
-        left: auto; */
         top: -20px;
     }
+
 
     /* vision */
     .accord-wrap {
