@@ -119,3 +119,4 @@ productNinth.addEventListener("click", function () {
 closeBtn9.addEventListener("click", () => {
     popup9.style["display"] = "none";
 })
+
