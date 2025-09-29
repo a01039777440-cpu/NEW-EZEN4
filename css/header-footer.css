@@ -1,0 +1,281 @@
+/* header */
+header {
+    /* padding: 13px 0; */
+    position: fixed;
+    z-index: 10000;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    top: 0;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    line-height: 70px;
+}
+
+.logo {
+    width: 242px;
+    /* border: 1px solid red; */
+}
+.closeBtn a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    background: url(../images/btn-close.svg) no-repeat center;
+    background-size: 30px;
+}
+
+.closeBtn {
+    display: none;
+    max-width: 70%;
+    min-width: 320px;
+    background: #fff;
+}
+
+.main-menu {
+    display: flex;
+    gap: 8rem;
+}
+
+.main-menu:after {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 70px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: -10;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.main-menu:hover:after {
+    height: 160px;
+    opacity: 1;
+}
+
+.main-menu>li {
+    position: relative;
+    padding: 0 10px;
+}
+
+.main-menu>li>a {
+    font-size: 2rem;
+    display: block;
+    line-height: 70px;
+}
+
+.main-menu>li:hover>a {
+    display: block;
+    color: var(--main-color);
+}
+
+.main-menu>li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.main-menu>li:hover:after {
+    width: 100%;
+}
+
+.main-menu:hover .depth1 {
+    display: block;
+}
+
+.main-menu>li:hover>a:after {
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+.main-menu>li>a:after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 18px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon-health_cross.svg) no-repeat center;
+    background-size: 16px;
+    transition: .3s transform;
+    transform: rotate(0);
+    opacity: 0;
+}
+
+.depth1 {
+    display: none;
+    position: absolute;
+    font-size: var(--text-size);
+    line-height: 1.7;
+    top: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+.depth1 a {
+    font-weight: 300;
+}
+
+.depth1 a:hover {
+    color: var(--main-color);
+}
+
+
+.gnb-wrap {
+    display: flex;
+    gap: 3rem;
+    /* border: 1px solid red; */
+}
+
+.gnb-wrap .lang {
+    position: relative;
+}
+
+.gnb-wrap .lang .lang-change {
+    min-width: 32px;
+}
+
+.gnb-wrap .lang>a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-right: 30px;
+    font-size: var(--text-size);
+    background: url(../images/icon-down.svg) no-repeat 100% center;
+}
+
+.gnb-wrap .lang>a.active {
+    background-image: url(../images/icon-up.svg);
+}
+
+.gnb-wrap .lang>a.active+.lang-list {
+    display: block;
+}
+
+.gnb-wrap .lang-list {
+    display: none;
+    width: 80px;
+    position: absolute;
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    line-height: 2;
+    text-align: center;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.gnb-wrap .gnb-list {
+    display: flex;
+    gap: 1rem;
+    /* border: 1px solid red; */
+}
+
+.gnb-wrap .gnb-list .ham-btn {
+    display: none;
+}
+
+
+/* footer */
+footer {
+    padding-top: 7rem;
+}
+
+footer .inner {
+    position: relative;
+}
+
+.top-btn {
+    position: absolute;
+    right: 0;
+    top: -70px;
+
+}
+
+.top-btn>a {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 6rem;
+    background-color: rgba(255, 38, 38, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-btn>a::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon-arrow-45deg.svg);
+    background-size: 100%;
+    transform: rotate(-45deg);
+}
+
+footer .inner {
+    max-width: 1700px;
+    background-color: #636363;
+    border-radius: var(--large-radius) var(--large-radius) 0 0;
+    padding: 50px 110px;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-size);
+    color: #f3f3f3;
+    font-weight: 200;
+}
+
+
+.footer-left address {
+    margin: 3rem 0 2rem;
+}
+
+.footer-left .custom-center {
+    margin-top: 3rem;
+    font-weight: 500;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-right>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right>.footer-menu {
+    gap: 5rem;
+}
+
+
+.footer-right>.sns-list img {
+    width: 40px;
+
+}

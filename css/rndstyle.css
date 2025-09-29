@@ -1,0 +1,214 @@
+.rnd-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 2rem 1rem;
+  margin: 30px 0;
+  /* border: 4px solid red; */
+}
+
+.item {
+  width: 23%;
+  /* border: 1px solid blue; */
+}
+
+.item .text-box {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  text-indent: 25%;
+  /* border: 1px solid blue; */
+}
+
+.item .text-box strong {
+  /* border: 1px solid blue; */
+  font-size: 2.4rem;
+  padding: 20px 0;
+  color: var(--main-color);
+}
+
+.item .text-box span {
+  display: block;
+  line-height: 1.5;  
+  /* border: 1px solid red; */
+}
+
+.item>div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  /* border: 1px solid green; */
+}
+
+.item.reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* strategy */
+.strategy-wrap {
+  background-color: #eee;
+}
+.strategy-list{
+  padding-bottom: 30px;
+}
+
+.strategy-wrap .title {
+  height: 200px;
+  /* background-color: chartreuse; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.strategy-wrap .title p {
+  font-size: 4.2rem;
+  font-weight: 600;
+}
+
+.strategy-top {
+  display: flex;
+  justify-content: center;
+  margin-right: 200px;
+  gap: 100px;
+  /* border: 1px solid green; */
+}
+
+.strategy-bottom {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  gap: 100px;
+  margin: 30px 0;
+  /* border: 1px solid green; */
+}
+
+.strategy {
+  position: relative;
+  width: 430px;
+  height: 300px;
+  margin: 20px 0;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  /* border: 2px solid blue; */
+  box-shadow: 10px 10px 10px -10px #ff2626
+}
+
+.strategy img {
+  position: absolute;
+  /* border: 2px solid orange; */
+  top: 20px;
+  right: 20px;
+}
+
+.strategy p {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+
+.strategy .strategy-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 20px 0;
+  /* border: 2px solid blue; */
+}
+
+.rnd-info {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+  /* border: 2px solid blue; */
+}
+
+.info-right .info-title {
+  font-size: 4.2rem;
+  font-weight: 600;
+}
+
+.info-right .sub-title {
+  font-size: 1.6rem;
+  line-height: 3;
+
+}
+
+.info-right>p {
+  line-height: 3;
+  font-size: 1.6rem;
+}
+
+.clinical-phase-container {
+  margin-top: 50px;
+  /* border: 2px solid blue; */
+}
+
+.clinical-phase-container {
+  width: 800px;
+  background: #fff;
+  /* border: 2px solid green; */
+}
+
+.pipeline-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  background: #fff;
+  /* border: 2px solid red; */
+}
+
+.header-item, .item-label{
+  padding: 10px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--sub-text-color);
+}
+
+.pipeline-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.program{
+  padding: 10px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--sub-text-color);
+  display: flex;
+  align-items: center;
+}
+.item-label {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  color: var(--sub-text-color);
+  display: flex;
+  align-items: center;
+}
+.status-section {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.phase-label {
+  font-size: 1.2rem;
+  color: var(--sub-text-color); 
+  /* border: 2px solid pink */
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background:var(--main-color);
+  border-radius: 3px;  
+}

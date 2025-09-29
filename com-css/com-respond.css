@@ -1,0 +1,698 @@
+/* 1280 */
+@media screen and (max-width:1280px) {
+
+    /* header */
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        /* left:0; */
+        left: -100%;
+        z-index: 100;
+    }
+
+    .main-menu {
+        display: block;
+        width: 70%;
+        height: 100%;
+        max-width: 700px;
+        background: #fff;
+        text-indent: 3rem;
+    }
+
+    .main-menu>li::after {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .main-menu>li>a {
+        border-bottom: 1px solid #ddd;
+        background: url(../images/icon-down.svg) no-repeat 90% center;
+    }
+
+    /* 스크립트 위해 미리 디자인 */
+    .main-menu>.active>a {
+        background-image: url(../images/icon-up.svg);
+    }
+
+    .depth1 {
+        /* display:block; */
+        /* pc에서 absolute줘서 겹쳐보이는거 없애기 */
+        position: static;
+        text-indent: 50px;
+        line-height: 2;
+    }
+
+    /* vision */
+    .accord-list>div {
+        width: 100px;
+    }
+
+
+    .accord .active {
+        width: 576px;
+    }
+
+    .accord-list .active .accord-title {
+        margin-bottom: 90px;
+        gap: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .accord-list .active .title {
+        font-size: 4.8rem;
+    }
+
+    .accord-list .active .title-kor {
+        font-size: 2.8rem;
+    }
+
+}
+
+
+/* 1128 */
+@media screen and (max-width:1128px) {
+
+    /* about us */
+    .about-us-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .help .main-text,
+    .global .main-text,
+    .money .main-text {
+        position: static;
+    }
+
+    .global .main-text,
+    .money .main-text {
+        margin-top: -60px;
+    }
+
+    .help .main-text {
+        width: 410px;
+        height: 410px;
+    }
+
+    .help .sub-text {
+        right: 50px;
+    }
+
+    .help .sub-text::after {
+        right: -30px;
+    }
+
+    .global .sub-text {
+        bottom: 280px;
+        left: 110px;
+    }
+
+    .money .sub-text {
+        bottom: 70px;
+        right: 200px;
+    }
+
+    .money .sub-text::before {
+        width: 350px;
+        left: -170px;
+    }
+
+    .money .sub-text::after {
+        left: 170px;
+    }
+
+    /* vision */
+    .accord-list>div {
+        width: 90px;
+    }
+
+    .accord-list .active {
+        width: 550px;
+    }
+
+    /* footer */
+    footer .inner {
+        padding: 4rem 6rem;
+    }
+}
+
+
+/* 1024 */
+@media screen and (max-width:1024px) {
+
+    /* about us */
+    .help .main-text {
+        width: 350px;
+        height: 350px;
+        font-size: 3.6rem;
+    }
+
+    .help .sub-text {
+        top: 120px;
+    }
+
+    .global .main-text {
+        width: 280px;
+        height: 280px;
+        font-size: 3.6rem;
+        bottom: 100px;
+    }
+
+    .global .sub-text {
+        bottom: 240px;
+    }
+
+    .money .main-text {
+        width: 200px;
+        height: 200px;
+        font-size: 3.6rem;
+        bottom: 70px;
+    }
+
+    .money .sub-text {
+        bottom: 50px;
+    }
+
+    /* vision */
+    .accord-list {
+        flex-direction: column;
+    }
+
+    .accord-list>div {
+        width: 676px;
+        height: 80px;
+        padding-top: 0;
+        padding-left: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .accord-list>div a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .accord-list>div .accord-title,
+    .accord-list>div .title,
+    .accord-list>div .title-kor {
+        margin: 0;
+    }
+
+    .accord-list .title {
+        transform: rotate(0);
+    }
+
+    .accord .num-btn {
+        display: none;
+    }
+
+    .accord-list .active {
+        width:676px;
+        height: 400px;
+        padding: 10px 20px;
+    }
+
+    .accord-list .active a {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 40px 30px;
+        box-sizing: border-box;
+    }
+
+    .accord-list .active .num-btn {
+        position: absolute;
+        bottom: 30px;
+        left: 80px;
+        display: block;
+    }
+
+    .accord-list .active .accord-title {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .accord-list .active .title {
+        font-size: 4.4rem;
+    }
+
+    .accord-list .active .title-kor {
+        font-size: 2.4rem;
+        display: block;
+    }
+
+    .accord-list .active .vision-content {
+        font-size: 2rem;
+        word-break: keep-all;
+        display: block;
+    }
+}
+
+
+/* 920 */
+@media screen and (max-width:920px) {
+
+    /* about us */
+    .about-us .sub-text {
+        font-size: 1.3rem;
+    }
+
+    .help .sub-text {
+        top: 120px;
+        right: 30px;
+    }
+
+    .help .sub-text::before {
+        width: 360px;
+        left: -215px;
+    }
+
+    .help .sub-text::after {
+        right: -30px;
+    }
+
+    .global .sub-text {
+        bottom: 240px;
+        left: 80px;
+    }
+
+    .global .sub-text::before {
+        width: 340px;
+        right: -180px;
+    }
+
+    .global .sub-text::after {
+        right: 150px;
+    }
+
+    .money .sub-text {
+        bottom: 60px;
+        right: 120px;
+    }
+
+    .money .sub-text::before {
+        width: 300px;
+        left: -160px;
+    }
+
+    .money .sub-text::after {
+        left: 130px;
+    }
+}
+
+
+/* 768 */
+@media screen and (max-width:768px) {
+
+    /* about us */
+    .about-us {
+        padding: 0 10px;
+    }
+
+    .about-us-list {
+        /* position:static; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 0;
+        height: auto;
+    }
+
+    .about-us-list .sub-text {
+        /* position:static; */
+        font-size: 1.4rem;
+    }
+
+    .about-us-list .main-text {
+        font-size: 3rem;
+    }
+
+    .help .main-text {
+        width: 300px;
+        height: 300px;
+    }
+
+    .help .sub-text {
+        right: 0;
+        top: 120px;
+    }
+
+    .help .sub-text::before {
+        width: 450px;
+        left: auto;
+        right: 0;
+    }
+
+    .help .sub-text::after {
+        right: 0;
+    }
+
+    .global .main-text,
+    .money .main-text {
+        margin-top: -50px;
+    }
+
+    .global .main-text {
+        width: 250px;
+        height: 250px;
+    }
+
+    .global .sub-text {
+        text-align: right;
+        right: 0;
+        left: auto;
+        bottom: 250px;
+    }
+
+    .global .sub-text::before {
+        right: 0;
+        width: 500px;
+    }
+
+    .global .sub-text::after {
+        right: 0;
+    }
+
+    .money .main-text {
+        width: 200px;
+        height: 200px;
+        bottom: 70px;
+    }
+
+    .money .sub-text {
+        right: 0;
+        bottom: 50px;
+    }
+
+    .money .sub-text::before {
+        right: 0;
+        left: auto;
+        width: 550px;
+    }
+
+    .money .sub-text::after {
+        right: 0;
+        left: auto;
+    }
+
+
+    /* vision */
+    .accord-list>div,
+    .accord-list .active {
+        width: 80vw;
+    }
+
+    .accord-list .active {
+        height: 350px;
+    }
+
+    .accord-list .active .title {
+        font-size: 4rem;
+    }
+
+    .accord-list .active .title-kor {
+        font-size: 2.2rem;
+    }
+
+    .accord-list .active .num-btn {
+        display: none;
+    }
+
+
+    /* footer */
+    footer .inner {
+        display: block;
+        text-align: center;
+        padding: 4rem 16px;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .footer-right .footer-menu {
+        gap: 2rem;
+    }
+}
+
+
+/* 640 */
+@media screen and (max-width:640px) {
+
+    /* about us */
+    .about-us {
+        padding: 0 20px;
+    }
+
+    .about-us-list {
+        /* position:static; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 0;
+        height: auto;
+    }
+
+    .about-us-list .sub-text {
+        /* position:static; */
+        font-size: 1.2rem;
+    }
+
+    .about-us-list .main-text {
+        font-size: 3rem;
+    }
+
+    .help .main-text {
+        width: 300px;
+        height: 300px;
+    }
+
+    .help .sub-text {
+        right: 0;
+        top: 120px;
+    }
+
+    .help .sub-text::before {
+        /* width: 350px;
+        left: auto;
+        right: 0; */
+        display: none;
+    }
+
+    .help .sub-text::after {
+        top: -20px;
+    }
+
+    .global .main-text,
+    .money .main-text {
+        margin-top: -50px;
+    }
+
+    .global .main-text {
+        width: 250px;
+        height: 250px;
+    }
+
+    .global .sub-text {
+        text-align: right;
+        right: 0;
+        left: auto;
+        bottom: 240px;
+    }
+
+    .global .sub-text::before {
+        /* right: 0;
+        width: 400px; */
+        display: none;
+    }
+
+    .global .sub-text::after {
+        /* right: 0; */
+        top: -20px;
+    }
+
+    .money .main-text {
+        width: 200px;
+        height: 200px;
+        bottom: 70px;
+    }
+
+    .money .sub-text {
+        right: 0;
+        bottom: 50px;
+    }
+
+    .money .sub-text::before {
+        /* right: 0;
+        left: auto;
+        width: 450px; */
+        display: none;
+    }
+
+    .money .sub-text::after {
+        /* right: 0;
+        left: auto; */
+        top: -20px;
+    }
+
+    /* vision */
+    .accord-wrap {
+        padding: 0 20px;
+    }
+
+    .accord-list {
+        gap: 20px;
+    }
+
+    .accord-list>div {
+        height: 80px;
+    }
+
+    .accord-list .accord-title .title {
+        font-size: 2.4rem;
+    }
+
+    .accord-list .active .accord-title {
+        gap: 50px;
+    }
+
+    .accord-list .active .title {
+        font-size: 3.2rem;
+    }
+
+    .accord-list .active .title-kor {
+        font-size: 2rem;
+    }
+
+    .accord-list .active .vision-content {
+        font-size: 1.6rem;
+    }
+
+    footer .footer-logo img {
+        width: 40vw;
+    }
+}
+
+
+/* 500 */
+@media screen and (max-width:500px) {
+    header {
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 40vw;
+    }
+
+    .gnb-wrap {
+        gap: 1rem;
+    }
+
+    .lang span {
+        display: none;
+    }
+
+    /* about us */
+
+    .about-us-list .sub-text {
+        font-size: 1.2rem;
+    }
+
+    .about-us-list .main-text {
+        font-size: 2rem;
+    }
+
+    .help .main-text {
+        width: 180px;
+        height: 180px;
+    }
+
+    .help .sub-text {
+        bottom: 0;
+        top: 50px;
+    }
+
+    .global .main-text {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+
+    .global .sub-text {
+        bottom: 0;
+        top: 160px;
+    }
+
+    .money .main-text {
+        width: 80px;
+        height: 80px;
+        bottom: 80px;
+    }
+
+    .money .sub-text {
+        bottom: 0;
+    }
+
+
+    /* vision */
+    .accord-list {
+        gap: 15px;
+    }
+
+    .accord-list>div {
+        height: 60px;
+        border-radius: 20px;
+    }
+
+    .accord-list .accord-title .title {
+        font-size: 2rem;
+    }
+
+    .accord-list .active {
+        height: 300px;
+    }
+
+    .accord-list .active .num-btn {
+        display: none;
+    }
+
+    .accord-list .active .accord-title {
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .accord-list .active .title {
+        font-size: 3rem;
+    }
+
+    .accord-list .active .title-kor {
+        font-size: 2rem;
+    }
+
+    .accord-list .active .vision-content {
+        font-size: 1.4rem;
+    }
+
+
+    /* footer */
+    footer .footer-logo img {
+        width: 40vw;
+    }
+}

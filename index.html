@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼천당</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- scd CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/respond.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- scd JS -->
+    <script defer src="./js/main.js"></script>
+    <script async src="./js/header-footer.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="skip">
+        <a href="#nav">메인메뉴 바로가기</a>
+        <a href="#container">본문 바로가기</a>
+    </div>
+    <!-- 1.header -->
+    <header id="header"></header>
+
+    <!-- 2.main -->
+    <main>
+        <div class="inner">
+            <!-- 2-1 main slider -->
+            <div class="main-slider-wrap">
+                <h2 class="blind">메인 슬라이드</h2>
+                <div class="main-slider swiper">
+                    <ul class="slider-list swiper-wrapper">
+                        <li class="swiper-slide"><a href="#void"><img src="./images/main-slid-1.png" alt="연구시설1"></a>
+                        </li>
+                        <li class="swiper-slide"><a href="#void"><img src="./images/main-slid-2.png"
+                                    alt="어린이가뛰어노는모습"></a></li>
+                        <li class="swiper-slide"><a href="#void"><img src="./images/main-slid-3.png" alt="연구시설2"></a>
+                        </li>
+                        <li class="swiper-slide"><a href="#void"><img src="./images/main-slid-4.png" alt="단란한 가족"></a>
+                        </li>
+                    </ul>
+                    <!-- 좌우 화살표 -->
+                    <div class="swiper-button-prev"><a href="#void"><img src="./images/slider-left-btn.png"
+                                alt="왼쪽으로"></a></div>
+                    <div class="swiper-button-next"><a href="#void"><img src="./images/slider-right-btn.png"
+                                alt="오른쪽으로"></a></div>
+                    <!-- pager -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- scroll Ani -->
+                <div class="scroll-wrap">
+                    <div class="scroll"><span></span></div>
+                    <p>scroll down</p>
+                </div>
+            </div>
+        </div>
+        <!-- 2-2 container -->
+        <div class="container" id="container">
+            <section id="product" class="product-wrap">
+                <div class="inner">
+                    <h2 class="section-title">PRODUCT</h2>
+                    <div class="product-list-wrap">
+                        <div class="product">
+                            <ul class="product-list">
+                                <li><a href="#void">
+                                        <div class="text-box">
+                                            <span class="kind">전문의약품</span>
+                                            <p class="product-title">엘사반정</p>
+                                            <p class="product-des">무방부제 안구건조증 치료제</p>
+                                            <p class="hash-tag">
+                                                #각결막 상피장애<br>
+                                                #건성안증후군 내환성 질환
+                                            </p>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./images/img-produt-item1.png" alt="제품1">
+                                            <p class="more-btn">
+                                                <span>자세히보기</span>
+                                                <img src="./images/btn-detail.svg" alt="자세히보기 화살표">
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="#void">
+                                        <div class="text-box">
+                                            <span class="kind">일반의약품</span>
+                                            <p class="product-title">삼진트론정</p>
+                                            <p class="product-des">무방부제 안구건조증 치료제</p>
+                                            <p class="hash-tag">
+                                                #각결막 상피장애<br>
+                                                #건성안증후군 내환성 질환</p>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./images/img-produt-item2.png" alt="제품1">
+                                            <p class="more-btn">
+                                                <span>자세히보기</span>
+                                                <img src="./images/btn-detail.svg" alt="자세히보기 화살표">
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a href="#void">
+                                        <div class="text-box">
+                                            <span class="kind new">신제품</span>
+                                            <p class="product-title">페트라정</p>
+                                            <p class="product-des">무방부제 안구건조증 치료제</p>
+                                            <p class="hash-tag">
+                                                #각결막 상피장애<br>
+                                                #건성안증후군 내환성 질환</p>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./images/img-produt-item3.png" alt="제품1">
+                                            <p class="more-btn">
+                                                <span>자세히보기</span>
+                                                <img src="./images/btn-detail.svg" alt="자세히보기 화살표">
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="product-arrow-list">
+                            <li><a href="#void"></a></li>
+                            <li><a href="#void"></a></li>
+                        </ul>
+                        <ul class="product-pager">
+                            <li><a href="#void"></a></li>
+                            <li class="active"><a href="#void"></a></li>
+                            <li><a href="#void"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="promotion" class="promotion-wrap">
+                <div class="inner">
+                    <h2 class="section-title">PROMOTION</h2>
+                    <div class="promotion-movie">
+                        <div class="promotion">
+                            <p><img src="./images/icon-pill.svg" alt="아이콘"></p>
+                            <p class="movie-more"><a href="./news.html">기업홍보 바로가기</a></p>
+                        </div>
+                        <video class="video" src="./video/youtube.mp4"></video>
+                        <p class="bigPlayBtn"><a href="#void"><img src="./images/bigPlay.png" alt="big"></a></p>
+                        <div class="video-control-btn-wrap">
+                            <ul class="control-btn-list">
+                                <li class="playPause"><a href="#void"></a></li>
+                                <li class="stop-btn"><a href="#void"><img src="./images/stop.svg" alt="stop"></a></li>
+                                <li class="prev-btn"><a href="#void"><img src="./images/backward.svg"
+                                            alt="backward"></a></li>
+                                <li class="next-btn"><a href="#void"><img src="./images/forward.svg" alt="forward"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="news" class="latest-news-wrap">
+                <div class="inner">
+                    <h2 class="section-title">LATEST NEWS</h2>
+                    <ul class="news-list">
+                        <li>
+                            <span class="date">2025-07-20</span>
+                            <h3 class="news-title">삼천당제약, 젬백스 개발 췌장암 신약 리아백스, “화려한 귀환”</h3>
+                            <p class="news-desc">삼천당제약은 금번 미국임상종양학회에서 “총 148명의 국소진행성 및 전이성 췌장암 환자를 대상으로 젬시타빈/카페시타빈과
+                                GV1001이 병용 투여된 시험군은 젬시타빈/카페시타빈이 투여된 대조군에 비해...</p>
+                            <p class="more-btn"><a href="#void"><img src="./images/btn-news-more.svg" alt="뉴스아이콘"></a>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="date">2025-07-28</span>
+                            <h3 class="news-title">삼천당제약, 세르비메드와 ‘자와선 차단’ 점안액 도입을 위한 MOU 체결</h3>
+                            <p class="news-desc">자외선 차단 기능과 눈 건강 강화 기능을 겸비한 점안액의 국내 최초 도입을 위해 삼천당제약과 이탈리아
+                                세르비메드社(SERVIMED industrial S.p.A)가 업무협약(MOU)을 체결하였습니다...</p>
+                            <p class="more-btn"><a href="#void"><img src="./images/btn-news-more.svg" alt="뉴스아이콘"></a>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="date">2025-07-30</span>
+                            <h3 class="news-title">삼성제약, 췌장암 치료제 리아백스 3상 임상시험 결과 발표</h3>
+                            <p class="news-desc">2014년 ASCO 발표 후, 국내서 3상 임상 진행… “결과 입증”삼천당제약은 지난 4일(현지시간) 췌장암 신약 ‘리아백스주
+                                (코드명 GV1001)’의 국내 3상 임상시험 결과를 미국임상종양학회(ASCO) 연례학술대회에서...</p>
+                            <p class="more-btn"><a href="#void"><img src="./images/btn-news-more.svg" alt="뉴스아이콘"></a>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="date">2025-07-20</span>
+                            <h3 class="news-title">삼천당제약 황반변성 치료제'SCD411' 한국 시장 판매권 취득</h3>
+                            <p class="news-desc">삼천당제약은 황반변성 치료제인 아일리아 바이오시밀러 'SCD411'의 한국 시장에서 판매 계약을 체결했다고 발표했다. 이번
+                                'SCD411' 도입을 통해 삼천당제약은 한국 시장에서 국내 판매망을 확충할 계획이다...</p>
+                            <p class="more-btn"><a href="#void"><img src="./images/btn-news-more.svg" alt="뉴스아이콘"></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="scd" class="scd-wrap">
+                <div class="inner">
+                    <h2 class="section-title">SCD</h2>
+                    <ul class="scd-list">
+                        <li>
+                            <a href="./rnd.html">
+                                <span class="category">R&D Center</span>
+                                <p class="scd-title">
+                                    <span><img src="./images/icon-experiment.svg" alt="아이콘"></span>연구개발
+                                </p>
+                                <p class="scd-des">저희 SCD는 우수한 품질의 의약품 생산을 위해 최선을 다해 연구합니다</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#void">
+                                <span class="category">Recruit</span>
+                                <p class="scd-title">
+                                    <span><img src="./images/icon-recruit.svg" alt="아이콘"></span>채용
+                                </p>
+                                <p class="scd-des">저희 SCD는 함께 인류의 건강을 책임질 인재를 찾고 있습니다</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#void">
+                                <span class="category">ISO 37301</span>
+                                <p class="scd-title">
+                                    <span><img src="./images/icon-iso.svg" alt="아이콘"></span>
+                                    <i>규범준수</i>경영시스템
+                                </p>
+                                <p class="scd-des">저희 SCD의 임직원들은 준법 경영방침을 이해하고 실천하고 있습니다</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 3.footer -->
+    <footer id="footer"></footer>
+    <!-- aside -->
+    <ul class="aside-menu">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#promotion">Promotion</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#scd">SCD</a></li>
+    </ul>
+</body>
+
+</html>
