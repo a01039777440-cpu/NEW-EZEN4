@@ -8,25 +8,104 @@
 
     <link rel="stylesheet" href="./fonts/pretendard.css">
     <link rel="stylesheet" href="./css/common.css">
-      <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./pro_css/product.css">
-    <script defer src="./pro_js/product.js"></script>
-     <link rel="stylesheet" href="./css/header-footer.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/respond.css">
-    <script defer src="./js/main.js"></script>
-    <script async src="./js/header-footer.js"></script>
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/pro-resp.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script defer src="./js/product.js"></script>
+    <script defer src="./js/header-footer.js"></script>
+    
+
 </head>
 
 <body>
-       <div class="skip">
+
+    
+     <div class="skip">
         <a href="#nav">메인메뉴 바로가기</a>
         <a href="#container">본문 바로가기</a>
     </div>
     <!-- 1.header -->
-    <header id="header"></header>
-
-     <div class="sub-visual bg-img news"> <!-- class: news, ir, product, recruit -->
+    <header id="header">
+        <div class="inner">
+    <!-- h1.logo>a[href="#void"]>img -->
+    <h1 class="logo"><a href="index.html"><img src="./images/header-logo.png" alt="삼천당 로고"></a></h1>
+    <nav id="nav">
+        <!-- ul.main-menu>li*5>a[href="#void"]+ul.depth1>li*5>a[href="#void"] -->
+        <div class="closeBtn">
+        <a href="#void"></a>
+        </div>
+        <ul class="main-menu">
+            <li>
+                <a href="./company.html">기업소개</a>
+                <ul class="depth1">
+                    <li><a href="./company.html">인사말</a></li>
+                    <li><a href="#void">미션&amp;비젼</a></li>
+                    <li><a href="#void">연혁</a></li>
+                    <li><a href="#void">오시는길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./product.html">제품정보</a>
+                <ul class="depth1">
+                    <li><a href="#void">일반의약품</a></li>
+                    <li><a href="#void">전문의약품</a></li>
+                    <li><a href="#void">의약외품</a></li>
+                    <li><a href="#void">건강기능식품</a></li>
+                    <li><a href="#void">수출전용</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./news.html">기업홍보</a>
+                <ul class="depth1">
+                    <li><a href="./news.html">삼천당소식</a></li>
+                    <li><a href="#void">보도자료</a></li>
+                    <li><a href="#void">영상광고</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./rnd.html">연구개발</a>
+                <ul class="depth1">
+                    <li><a href="./rnd.html">R&D</a></li>
+                    <li><a href="#void">중앙연구소</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#void">기업IR</a>
+                <ul class="depth1">
+                    <li><a href="#void">재무정보</a></li>
+                    <li><a href="#void">실적발표</a></li>
+                    <li><a href="#void">공시</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="gnb-wrap">
+        <div class="lang-wrap">
+            <div class="lang">
+                <a href="#void">
+                    <img src="./images/icon-lang.svg" alt="지구본">
+                    <span class="lang-change">KOR</span>
+                </a>
+                <ul class="lang-list">
+                    <li class="kor"><a href="#void">KOR</a></li>
+                    <li class="eng"><a href="#void">ENG</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ul.gnb-list>li*2>a[href="#void"]>img -->
+        <ul class="gnb-list">
+            <li><a href="./sub-standard.html"><img src="./images/icon-user.svg" alt="로그인"></a></li>
+            <li class="ham-btn"><a href="#void"><img src="./images/icon-ham-btn.svg" alt="햄버거버튼"></a></li>
+        </ul>
+    </div>
+</div>
+    </header>
+    
+    <main>
+        <!-- 서브페이지 비주얼 H2 -->
+        <div class="sub-visual bg-img ir"> <!-- class: news, ir, product, recruit -->
             <div class="inner">
                 <div class="text-box">
                     <h2>PRODUCT</h2>
@@ -39,50 +118,53 @@
             <div class="inner">
                 <div class="sub-section-title">
                     <h3>제품 검색</h3>
-                    <p class="desc"><strong>삼천당제약</strong>의 다양한 제품을 확인하실 수 있습니다</p>
+                    <p class="desc"> <strong>삼천당제약</strong>의 다양한 제품을 확인하실 수 있습니다.</p>
                 </div>
                 <!-- 아래 작업 -->
             </div>
         </section>
+    </main>
 
     <main>
         <div class="inner">
-            <div class="search"><a href="#void"><img src="./pro_img/search.png" alt=""></a></div>
-            <ul class="kind">
-                <li><a href="#void"><img src="./pro_img/일반의약품.png" alt="">일반의약품</a></li>
-                <li><a href="#void"><img src="./pro_img/전문의약품.png" alt="">전문의약품</a></li>
-                <li><a href="#void"><img src="./pro_img/의약외품.png" alt="">의약외품</a></li>
-                <li><a href="#void"><img src="./pro_img/건강기능식품.png" alt="">건강기능식품</a></li>
-                <li><a href="#void"><img src="./pro_img/수출전용.png" alt="">수출전용</a></li>
+            <div class="search"><a href="#void">
+                <input type="text">
+                <img src="./images/search.png" alt=""></a></div>
+                        <ul class="kind">
+                <li><a href="#void"><img src="./images/일반의약품.png" alt="">일반의약품</a></li>
+                <li><a href="#void"><img src="./images/전문의약품.png" alt="">전문의약품</a></li>
+                <li><a href="#void"><img src="./images/의약외품.png" alt="">의약외품</a></li>
+                <li><a href="#void"><img src="./images/건강기능식품.png" alt="">건강기능식품</a></li>
+                <li><a href="#void"><img src="./images/수출전용.png" alt="">수출전용</a></li>
             </ul>
 
             <div class="product-wrap">
                 <ul class="product-list">
-                    <li><a href="#void"><img src="./pro_img/오에수보라.png" alt="">
+                    <li><a href="#void"><img src="./images/오에수보라.png" alt="">
                         <span class="a">오에수 트레할로스 점안액</span>
                         <span class="b">무보존제 1회용 인공눈물</span></a></li>
-                    <li><a href="#void"><img src="./pro_img/오에수핑크.png" alt="">
+                    <li><a href="#void"><img src="./images/오에수핑크.png" alt="">
                         <span class="a">오에수 원앤데이후레쉬 점안액</span>
                         <span class="b">무보존제 1회용 인공눈물</span></a></li>
-                    <li><a href="#void"><img src="./pro_img/오에수초록.png" alt="">
+                    <li><a href="#void"><img src="./images/오에수초록.png" alt="">
                         <span class="a">오에수 스마일오투점안액</span>
                         <span class="b">무보존제 1회용 인공눈물</span></a></li>
-                    <li><a href="#void"><img src="./pro_img/오에수파랑.png" alt="">
+                    <li><a href="#void"><img src="./images/오에수파랑.png" alt="">
                         <span class="a">오에수 디알프레쉬점안액</span>
                         <span class="b">무보존제 1회용 인공눈물</span></a></li>
-                    <li><a href="#void"><img src="./pro_img/오에핏트리플.png" alt="">
+                    <li><a href="#void"><img src="./images/오에핏트리플.png" alt="">
                         <span class="a">오에핏 트리플케어 3 in 1</span> 
                         <span class="b">눈 건조 개선 ·피부 보습 · 항산화</span></a></li>
-                    <li><a href="#void"><img src="./pro_img/루테인구미.png" alt="">
+                    <li><a href="#void"><img src="./images/루테인구미.png" alt="">
                         <span class="a">오에핏 루테인 구미</span>
                         <span class="b">눈 건강영양제</span></a></li>
-                    <li><a href="#void"><img src="./pro_img/오큐핏.png" alt="">
+                    <li><a href="#void"><img src="./images/오큐핏.png" alt="">
                         <span class="a">오에핏 루테인 지아잔틴 미니</span>
                         <span class="b">눈 건강 · 초미니캡슐</span></a></li>
-                    <li><a href="#void"><img src="./pro_img/겔초록.png" alt="">
+                    <li><a href="#void"><img src="./images/겔초록.png" alt="">
                         <span class="a">오에랩 아이스 쿨링 겔 아이패치</span>
                         <span class="b">하이드로겔 아이패치</span></a></li>
-                    <li><a href="#void"><img src="./pro_img/겔분홍.png" alt="">
+                    <li><a href="#void"><img src="./images/겔분홍.png" alt="">
                         <span class="a">오에랩 딥 터치 아이패드</span>
                         <span class="b">마이크로니들 아이패치</span></a></li>
                 </ul>
@@ -90,22 +172,22 @@
 
             <div class="num">
                 <ul>
-                    <li><a href="#void"><img src="./pro_img/pro-arrow-ll.png" alt=""></a></li>
-                    <li><a href="#void"><img src="./pro_img/pro-arrow-l.png" alt=""></a></li>
+                    <li><a href="#void"><img class="two" src="./images/btn-pager-first.png" alt=""></a></li>
+                    <li><a href="#void"><img class="one" src="./images/btn-pager-prev.png" alt=""></a></li>
                     <li class="number"><a href="#void">1</a></li>
                     <li class="number"><a href="#void">2</a></li>
                     <li class="number"><a href="#void">3</a></li>
                     <li class="number"><a href="#void">4</a></li>
                     <li class="number"><a href="#void">5</a></li>
-                    <li><a href="#void"><img src="./pro_img/pro-arrow-r.png" alt=""></a></li>
-                    <li><a href="#void"><img src="./pro_img/pro-arrow-rr.png" alt=""></a></li>
+                    <li><a href="#void"><img class="one" src="./images/btn-pager-next.png" alt=""></a></li>
+                    <li><a href="#void"><img class="two" src="./images/btn-pager-end.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
         <div class="popup-wrap1">
             <div class="popup1">
                 <div class="popup-title-left1">
-                    <p><img src="./pro_img/오에수보라.png" alt=""></p>
+                    <p><img src="./images/오에수보라.png" alt=""></p>
                     <h2>오에수 트레할로스 점안액</h2>
                     <p>(트레할로스수화물)</p>
                 </div>
@@ -132,7 +214,7 @@
         <div class="popup-wrap2">
             <div class="popup2">
                 <div class="popup-title-left2">
-                    <p><img src="./pro_img/오에수핑크.png" alt=""></p>
+                    <p><img src="./images/오에수핑크.png" alt=""></p>
                     <h2>오에수 원앤데이후레쉬 점안액</h2>
 
                 </div>
@@ -161,7 +243,7 @@
         <div class="popup-wrap3">
             <div class="popup3">
                 <div class="popup-title-left3">
-                    <p><img src="./pro_img/오에수초록.png" alt=""></p>
+                    <p><img src="./images/오에수초록.png" alt=""></p>
                     <h2>오에수 스마일오투점안액</h2>
 
                 </div>
@@ -190,7 +272,7 @@
         <div class="popup-wrap4">
             <div class="popup4">
                 <div class="popup-title-left4">
-                    <p><img src="./pro_img/오에수파랑.png" alt=""></p>
+                    <p><img src="./images/오에수파랑.png" alt=""></p>
                     <h2>오에수 디알프레쉬점안액</h2>
                     <p>(카르복시메틸셀룰로오스나트륨 0.5%)
                     </p>
@@ -216,7 +298,7 @@
         <div class="popup-wrap5">
             <div class="popup5">
                 <div class="popup-title-left5">
-                    <p><img src="./pro_img/오에핏트리플.png" alt=""></p>
+                    <p><img src="./images/오에핏트리플.png" alt=""></p>
                     <h2>오에핏 트리플케어 3 in 1</h2>
 
                 </div>
@@ -245,7 +327,7 @@
         <div class="popup-wrap6">
             <div class="popup6">
                 <div class="popup-title-left6">
-                    <p><img src="./pro_img/루테인구미.png" alt=""></p>
+                    <p><img src="./images/루테인구미.png" alt=""></p>
                     <h2>오에핏 루테인 구미</h2>
 
                 </div>
@@ -272,7 +354,7 @@
         <div class="popup-wrap7">
             <div class="popup7">
                 <div class="popup-title-left7">
-                    <p><img src="./pro_img/오큐핏.png" alt=""></p>
+                    <p><img src="./images/오큐핏.png" alt=""></p>
                     <h2>
                         오에핏 루테인 지아잔틴 미니</h2>
 
@@ -300,7 +382,7 @@
         <div class="popup-wrap8">
             <div class="popup8">
                 <div class="popup-title-left8">
-                    <p><img src="./pro_img/겔초록.png" alt=""></p>
+                    <p><img src="./images/겔초록.png" alt=""></p>
                     <h2>오에랩 아이스 쿨링 겔 아이패치</h2>
 
                 </div>
@@ -328,7 +410,7 @@
         <div class="popup-wrap9">
             <div class="popup9">
                 <div class="popup-title-left9">
-                    <p><img src="./pro_img/겔분홍.png" alt=""></p>
+                    <p><img src="./images/겔분홍.png" alt=""></p>
                     <h2>오에랩 딥 터치 아이패치</h2>
 
                 </div>
@@ -352,7 +434,38 @@
         </div>
     </main>
 
-     <footer id="footer"></footer>
+        <!-- 3.footer -->
+    <footer id="footer">
+        <div class="inner">
+    <div class="top-btn"><a href="#">top</a></div>
+    <div class="footer-left">
+        <p class="footer-logo"><img src="./images/footer-logo.png" alt="하단로고"></p>
+        <address>
+            <p>서울특별시 서초구 효령로 351 (06643) </p>
+            <p>대표전화 02-2046-1100</p>
+            <p>팩스: 02-2046-1101</p>
+            <p>이메일: webmaster@scd.co.kr</p>
+        </address>
+        <p class="copy">Copyright©2009 by SCD Pharm. All Rights Reserved.</p>
+        <p class="custom-center"><a href="#void"><img src="./images/icon-footer-tel.svg" alt="전화"><span>소비자상담전화:
+                    1552-3846</span></a></p>
+    </div>
+    <div class="footer-right">
+        <ul class="footer-menu">
+            <li><a href="#void">기업소개</a></li>
+            <li><a href="#void">제품정보</a></li>
+            <li><a href="#void">기업홍보</a></li>
+            <li><a href="#void">연구개발</a></li>
+            <li><a href="#void">기업IR</a></li>
+        </ul>
+        <ul class="sns-list">
+            <li><a href="#void"><img src="./images/icon-instagram.svg" alt="인스타"></a></li>
+            <li><a href="#void"><img src="./images/icon-facebook.svg" alt="페이스북"></a></li>
+        </ul>
+
+    </div>
+</div>
+    </footer>
 </body>
 
 </html>
