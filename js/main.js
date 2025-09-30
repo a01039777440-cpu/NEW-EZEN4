@@ -11,7 +11,7 @@ quickBtns.forEach(qBtn => {
 
 // 최상단 슬라이더
 var swiper = new Swiper(".main-slider", {
-    effect:"fade",
+    effect: "fade",
     loop: true,
     autoplay: {
         delay: 3000,
@@ -28,6 +28,23 @@ var swiper = new Swiper(".main-slider", {
     },
 });
 
+var swiper2 = new Swiper(".product", {
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000
+    },
+    slidesPerView: 3,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+});
 // 프로모션 비디오 컨트롤
 let mainVideo = document.querySelector(".promotion-movie video");
 let controlList = document.querySelector(".video-control-btn-wrap");
@@ -38,14 +55,14 @@ let prevBtn = document.querySelector(".prev-btn");
 let nextBtn = document.querySelector(".next-btn");
 
 bigBtn.addEventListener("click", function () {
-        mainVideo.play(),
-        this.style.display="none",
-        controlList.style.display="block"
-        playPause.classList.add("active");
+    mainVideo.play(),
+        this.style.display = "none",
+        controlList.style.display = "block"
+    playPause.classList.add("active");
 })
 mainVideo.addEventListener("ended", function () {
-    bigBtn.style.display="block",
-    controlList.style.display="none"
+    bigBtn.style.display = "block",
+        controlList.style.display = "none"
     this.currentTime = 0;
 })
 playPause.addEventListener("click", function () {

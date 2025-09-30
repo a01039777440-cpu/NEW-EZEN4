@@ -102,8 +102,8 @@
 /* .swiper- */
 
 .main-slider-wrap .swiper-button-prev,
-.main-slider-wrap.swiper-button-next{
-    width: auto;
+.main-slider-wrap .swiper-button-next{
+    width: 75px;
     color: transparent;
 }
 .main-slider-wrap .swiper-button-prev:after,
@@ -130,6 +130,3 @@
     left: 40px;
     bottom: 10%;
 }
-/* .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{ 
-    margin: 10px;
-} */

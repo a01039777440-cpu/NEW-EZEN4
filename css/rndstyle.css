@@ -219,13 +219,31 @@
 }
 
 @media screen and (max-width:1310px) {
-  html {
-    font-size: 9px;
-  }
+  .item .text-box strong {
+  font-size: 2rem;  
 }
 
-@media screen and (max-width:1280px) {
-  /* 2.보이기 */
-  
+.item .text-box span {
+  font-size: 1.4rem;  
+ 
+}
+  .rnd-list {
+    gap:0px;
+  }
+  .rnd-info{
+    position: relative;
+  }
+  .info-left>p>img{
+  width: 20%;
+  left: 55%;
+  bottom: 50%;
+    position:absolute;
+}
+
+}
+@media screen and (max-width:1310px) {
+.rnd-list .item{
+  display: grid;  
+}
 
 }
