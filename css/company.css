@@ -48,7 +48,7 @@ main {
 
 /* Help */
 .help .main-text {
-  background: url(../com-images/help-blur.png) no-repeat center/cover;
+  background: url(../images/help-blur.png) no-repeat center/cover;
   max-width: 440px;
   width: 40%;
   aspect-ratio: 1/1;
@@ -89,7 +89,7 @@ main {
 
 /* Global */
 .global .main-text {
-  background: url(../com-images/global-blur.png) no-repeat center/cover;
+  background: url(../images/global-blur.png) no-repeat center/cover;
   max-width: 320px;
   width: 40%;
   aspect-ratio: 1/1;
