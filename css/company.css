@@ -25,7 +25,7 @@ main {
   min-height: 700px;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 /* 공통 */
@@ -111,7 +111,7 @@ main {
   position: absolute;
   right: -240px;
   top: -20px;
-  width: 430px;
+  width: 426px;
   height: 2px;
   background: rgba(100, 100, 100, 0.5);
 }
@@ -119,7 +119,7 @@ main {
 .global .sub-text::after {
   content: "";
   position: absolute;
-  right: 180px;
+  right: 178px;
   top: -24px;
   width: 10px;
   height: 10px;
@@ -131,8 +131,8 @@ main {
 .money .main-text {
   background: #f3f0e9;
   max-width: 220px;
-  width:40%;
-  aspect-ratio:1/1;
+  width: 40%;
+  aspect-ratio: 1/1;
   font-size: 4.6rem;
   position: absolute;
   bottom: 70px;
@@ -190,9 +190,8 @@ main {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  border: 4px solid blue;
+  /* border: 4px solid blue; */
 }
-
 
 .accord-list>div {
   background: var(--main-color);
@@ -202,7 +201,7 @@ main {
   /* 숫자버튼 부모 */
   position: relative;
   padding-top: 80px;
-  /* flex-shrink: 0; */
+  /* transition:0.3s ease; */
 }
 
 .accord-title {
@@ -246,7 +245,7 @@ main {
 
 .accord-list .active .accord-title {
   display: flex;
-  gap: 60px;
+  gap: 30px;
   align-items: center;
   margin-bottom: 150px;
 }
