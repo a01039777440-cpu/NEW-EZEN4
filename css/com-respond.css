@@ -50,11 +50,6 @@
         width: 100px;
     }
 
-
-    /* .accord-list .active {
-        width: 576px;
-    } */
-
     .accord-list .active .accord-title {
         margin-bottom: 90px;
         gap: 50px;
@@ -70,6 +65,92 @@
         font-size: 2.8rem;
     }
 
+}
+
+
+/* 1200 */
+@media screen and (max-width:1200px) {
+    /* about us */
+    .about-us-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-list .sub-text {
+        font-size: 1.8rem;
+    }
+
+    .help .main-text,
+    .global .main-text,
+    .money .main-text {
+        position: static;
+    }
+
+    .global .main-text,
+    .money .main-text {
+        margin-top: -60px;
+    }
+
+    .help .main-text {
+        width: 410px;
+        height: 410px;
+    }
+
+    .help .sub-text {
+        right: 0;
+    }
+
+    .help .sub-text::before {
+        z-index: -1;
+        right: 0;
+        width:550px;
+    }
+
+    .help .sub-text::after {
+        right: 0;
+    }
+
+    .global .main-text {
+        width: 310px;
+        height: 310px;
+    }
+
+    .global .sub-text {
+        bottom: 280px;
+        /* left: 60px; */
+        left: 20px;
+    }
+
+    .global .sub-text::before {
+        z-index: -1;
+        width: 450px;
+    }
+
+    .global .sub-text::after {
+        left: 0px;
+    }
+
+    .money .main-text {
+        width: 210px;
+        height: 210px;
+    }
+
+    .money .sub-text {
+        bottom: 70px;
+        right: 90px;
+    }
+
+    .money .sub-text::before {
+        width: 380px;
+        /* left: -250px; */
+        z-index: -1;
+    }
+
+    .money .sub-text::after {
+        left: 180px;
+    }
 }
 
 
@@ -124,12 +205,13 @@
 
     .global .sub-text {
         bottom: 280px;
-        left: 60px;
+        /* left: 60px; */
+        left: 20px;
     }
 
     .global .sub-text::before {
         z-index: -1;
-        width: 410px;
+        width: 408px;
     }
 
     .global .sub-text::after {
@@ -160,10 +242,6 @@
     .accord-list>div {
         width: 90px;
     }
-
-    /* .accord-list .active {
-        width: 550px;
-    } */
 
     /* footer */
     footer .inner {
@@ -307,7 +385,7 @@
 
     .help .sub-text {
         top: 120px;
-        right: 30px;
+        right: 0;
     }
 
     .help .sub-text::before {
@@ -326,7 +404,7 @@
 
     .global .sub-text {
         bottom: 240px;
-        left: 80px;
+        left: 20px;
     }
 
     .global .sub-text::before {
@@ -341,7 +419,7 @@
 
     .money .sub-text {
         bottom: 60px;
-        right: 120px;
+        right: 50px;
     }
 
     .money .sub-text::before {
@@ -366,26 +444,6 @@
     .about-us-list .sub-text::before {
         display: none;
     }
-
-    /* .help .sub-text {
-        right: 0;
-    }
-
-    .global .sub-text {
-        right: 0;
-    }
-
-    .global .sub-text::after {
-        left: 0;
-    }
-
-    .money .sub-text {
-        right: 0;
-    }
-
-    .money .sub-text::after {
-        right: 0;
-    } */
 
     .about-us-list {
         display: flex;
@@ -448,6 +506,7 @@
         z-index:-1;
     } */
 
+
     .global .sub-text::after {
         right: 0;
         left: auto;
@@ -492,7 +551,7 @@
     }
 
     .accord-list .active .title-kor {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 
     .accord-list .active .num-btn {
@@ -624,7 +683,7 @@
     }
 
     .accord-list .active .accord-title {
-        gap: 50px;
+        gap: 20px;
     }
 
     .accord-list .active .title {
@@ -632,7 +691,7 @@
     }
 
     .accord-list .active .title-kor {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .accord-list .active .vision-content {
@@ -676,6 +735,7 @@
     .help .main-text {
         width: 150px;
         height: 150px;
+        margin-bottom: 10px;
     }
 
     .help .sub-text {
@@ -753,12 +813,17 @@
     }
 }
 
+
 /* 360 */
 @media screen and (max-width:360px) {
     .about-us-list .main-text {
         width: 120px;
         height: 120px;
         font-size: 1.64rem;
+    }
+
+    .help .main-text{
+        margin-bottom:auto;
     }
 
     .global .main-text {
