@@ -117,6 +117,11 @@
         right: 0;
     }
 
+    .global .main-text {
+        width: 310px;
+        height: 310px;
+    }
+
     .global .sub-text {
         bottom: 280px;
         left: 60px;
@@ -129,6 +134,11 @@
 
     .global .sub-text::after {
         left: 0px;
+    }
+
+    .money .main-text {
+        width: 210px;
+        height: 210px;
     }
 
     .money .sub-text {
@@ -201,7 +211,7 @@
     /* vision */
     .accord-list {
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
     }
 
     .accord-list>div {
@@ -353,8 +363,8 @@
         padding: 0 10px;
     }
 
-    .about-us-list .sub-text::before{
-        display:none;
+    .about-us-list .sub-text::before {
+        display: none;
     }
 
     /* .help .sub-text {
@@ -440,7 +450,7 @@
 
     .global .sub-text::after {
         right: 0;
-        left:auto;
+        left: auto;
     }
 
     .money .main-text {
@@ -664,8 +674,8 @@
     }
 
     .help .main-text {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
     .help .sub-text {
@@ -681,7 +691,7 @@
 
     .global .sub-text {
         bottom: 0;
-        top: 160px;
+        top: 150px;
     }
 
     .money .main-text {
@@ -740,5 +750,31 @@
     /* footer */
     footer .footer-logo img {
         width: 40vw;
+    }
+}
+
+/* 360 */
+@media screen and (max-width:360px) {
+    .about-us-list .main-text {
+        width: 120px;
+        height: 120px;
+        font-size: 1.64rem;
+    }
+
+    .global .main-text {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
+    .global .sub-text {
+        top: 170px;
+    }
+
+    .money .main-text {
+        margin: auto;
+    }
+
+    .money .sub-text {
+        bottom: 30px;
     }
 }
