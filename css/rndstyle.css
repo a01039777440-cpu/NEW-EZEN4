@@ -262,6 +262,9 @@
 
 
 @media screen and (max-width:768px) {
+  .rnd-list {
+    margin: 0;
+  }
   .rnd-list .item {
     width: 100%;
   }
@@ -271,11 +274,14 @@
   }
 }
 
-@media screen and (max-width:560px) {
+@media screen and (min-width: 360px) and (max-width: 560px){
  .strategy {
   width: 60%;
   padding: 0 10px;
  }
+ .rnd-info {
+    margin: 20px 0;
+  }
  .clinical-phase-container {
     width: 300px;
   }
