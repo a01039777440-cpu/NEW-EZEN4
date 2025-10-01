@@ -340,10 +340,6 @@
     }
 
     .accord-list .active .num-btn {
-        /* position: absolute;
-        bottom: 30px;
-        left: 80px;
-        display: block; */
         display: none;
     }
 
@@ -472,13 +468,6 @@
         top: 120px;
     }
 
-    /* .help .sub-text::before {
-        width: 450px;
-        left: auto;
-        right: 0;
-        z-index:-1;
-    } */
-
     .help .sub-text::after {
         right: 0;
     }
@@ -500,13 +489,6 @@
         bottom: 250px;
     }
 
-    /* .global .sub-text::before {
-        right: 0;
-        width: 500px;
-        z-index:-1;
-    } */
-
-
     .global .sub-text::after {
         right: 0;
         left: auto;
@@ -522,13 +504,6 @@
         right: 0;
         bottom: 50px;
     }
-
-    /* .money .sub-text::before {
-        right: 0;
-        left: auto;
-        width: 550px;
-        z-index:-1;
-    } */
 
     .money .sub-text::after {
         right: 0;
