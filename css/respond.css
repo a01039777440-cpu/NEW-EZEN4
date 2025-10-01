@@ -194,8 +194,9 @@
         .sub-news-list>li>.img-box {
             display: none;
         }
+
         .sub-news-list>li>a {
-            width: unset!important;
+            width: unset !important;
         }
     }
 
@@ -342,6 +343,16 @@
 
     .product-list>li .text-box {
         padding: 2rem;
+    }
+
+    .news{
+        .sub-news-list-header {
+            flex-direction: column;
+            justify-content: unset;
+            align-items: flex-end;
+            gap: 8px;
+        }
+        
     }
 
     .news-list>li {

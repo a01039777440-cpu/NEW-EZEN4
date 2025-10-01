@@ -6,7 +6,7 @@
 }
 input, button {
     font-family: var(--font--family__main);
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 input{
     font-family: var(--font--family__main);
@@ -14,7 +14,7 @@ input{
     border-radius: 4px;
     border: 1px solid var(--color--gray);
     background: #FFF;
-    min-height: 40px;
+    min-height: 4rem;
     padding: 0 11px;
 }
 input:focus{
@@ -30,15 +30,15 @@ button {
     border: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap:0.8rem;
     &:not(:has(.icon)){
-       padding: 8px 20px; 
+       padding: 0.8rem 2rem; 
     }
 }
 .icon::before{
         content: '';
-        width: 24px;
-        height: 24px;
+        width: 2.4rem;
+        height: 2.4rem;
         background-repeat: no-repeat;
         background-position: center;
 }
@@ -248,9 +248,6 @@ button[disabled] {
             width: 24px;
             height: 24px;
             line-height: 24px;
-        }
-        .sub-section-title strong{
-            font-size: 20px;
         }
         .sub-news-list>li>a> .title,
         .sub-news-list>li>a> .kind{
