@@ -246,9 +246,6 @@
     flex-direction: column;
     gap:0;
     align-items: center;    
-  }
-  .rnd-info{
-    border: 1px solid green;    
   }  
   .info-left{
    display: none;
@@ -271,5 +268,15 @@
 
   .clinical-phase-container {
     width: 500px;
+  }
+}
+
+@media screen and (max-width:560px) {
+ .strategy {
+  width: 60%;
+  padding: 0 10px;
+ }
+ .clinical-phase-container {
+    width: 300px;
   }
 }
