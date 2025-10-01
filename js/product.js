@@ -120,3 +120,32 @@ closeBtn9.addEventListener("click", () => {
     popup9.style["display"] = "none";
 })
 
+ const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+
+    // 검색 실행 함수
+   function goToProductList() {
+      const keyword = searchInput.value.trim();
+
+      if (keyword) {
+        const productList = document.querySelector(".product-list");
+        if (productList) {
+          productList.scrollIntoView({ behavior: "smooth" });
+        } else {
+          alert("해당 제품은 없습니다");
+        }
+      } else {
+        alert("해당 제품은 없습니다");
+      }
+    }
+
+    // 엔터 키 이벤트
+    searchInput.addEventListener("keypress", function(e) {
+      if (e.key === "Enter") {
+        goToProductList();
+      }
+    });
+
+    // 돋보기 클릭
+    searchBtn.addEventListener("click", goToProductList);
+
