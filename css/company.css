@@ -1,7 +1,3 @@
-main {
-  /* padding-top: 70px; */
-}
-
 /* container */
 
 /* about-us */
@@ -201,11 +197,6 @@ main {
   /* 숫자버튼 부모 */
   position: relative;
   padding-top: 80px;
-  /* transition:0.3s ease; */
-}
-
-.accord-title {
-  /* margin-top: 80px; */
 }
 
 .accord-list .title {
