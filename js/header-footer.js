@@ -8,8 +8,8 @@ fetch('header.html')
          * 스크립트 
         */
         // GNB의 언어 서브 펼침 이벤트
-        lang = document.querySelector('.lang>a');
-        langText = document.querySelector('.lang-change');
+        let lang = document.querySelector('.lang>a');
+        let langText = document.querySelector('.lang-change');
         lang.addEventListener('click', () => {
             lang.classList.toggle('active');
         })
@@ -21,23 +21,23 @@ fetch('header.html')
                 lang.classList.remove('active');
             });
         });
-        kor.addEventListener("click", function(){
-            langText.textContent="KOR"
+        kor.addEventListener("click", function () {
+            langText.textContent = "KOR"
         })
-        eng.addEventListener("click", function(){
-            langText.textContent="ENG"
+        eng.addEventListener("click", function () {
+            langText.textContent = "ENG"
         })
         // 햄버거 버튼
         let hamBtn = document.querySelector('.ham-btn');
-        hamBtn.addEventListener("click", function(){
-            nav.style.display="block"
-            nav.style.left="0"
+        hamBtn.addEventListener("click", function () {
+            nav.style.display = "block"
+            nav.style.left = "0"
         })
         let closeBtn = document.querySelector('.closeBtn');
         let nav = document.querySelector('nav');
-        closeBtn.addEventListener("click", function(e){
+        closeBtn.addEventListener("click", function (e) {
             console.log(closeBtn)
-            nav.style.display="none"
+            nav.style.display = "none"
         })
 
 
