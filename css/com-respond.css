@@ -1,49 +1,6 @@
 /* 1280 */
 @media screen and (max-width:1280px) {
 
-    /* header */
-    nav {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.7);
-        top: 0;
-        /* left:0; */
-        left: -100%;
-        z-index: 100;
-    }
-
-    .main-menu {
-        display: block;
-        width: 70%;
-        height: 100%;
-        max-width: 700px;
-        background: #fff;
-        text-indent: 3rem;
-    }
-
-    .main-menu>li::after {
-        left: 0;
-        transform: translateX(0);
-    }
-
-    .main-menu>li>a {
-        border-bottom: 1px solid #ddd;
-        background: url(../images/icon-down.svg) no-repeat 90% center;
-    }
-
-    /* 스크립트 위해 미리 디자인 */
-    .main-menu>.active>a {
-        background-image: url(../images/icon-up.svg);
-    }
-
-    .depth1 {
-        /* display:block; */
-        /* pc에서 absolute줘서 겹쳐보이는거 없애기 */
-        position: static;
-        text-indent: 50px;
-        line-height: 2;
-    }
 
     /* vision */
     .accord-list>div {
@@ -241,11 +198,6 @@
     /* vision */
     .accord-list>div {
         width: 90px;
-    }
-
-    /* footer */
-    footer .inner {
-        padding: 4rem 6rem;
     }
 }
 
@@ -532,23 +484,6 @@
     .accord-list .active .num-btn {
         display: none;
     }
-
-
-    /* footer */
-    footer .inner {
-        display: block;
-        text-align: center;
-        padding: 4rem 16px;
-    }
-
-    .footer-right {
-        margin-top: 20px;
-        align-items: center;
-    }
-
-    .footer-right .footer-menu {
-        gap: 2rem;
-    }
 }
 
 
@@ -681,22 +616,6 @@
 
 /* 500 */
 @media screen and (max-width:500px) {
-    header {
-        padding: 0 10px;
-    }
-
-    .logo {
-        width: 40vw;
-    }
-
-    .gnb-wrap {
-        gap: 1rem;
-    }
-
-    .lang span {
-        display: none;
-    }
-
     /* about us */
 
     .about-us-list .sub-text {
@@ -779,12 +698,6 @@
 
     .accord-list .active .vision-content {
         font-size: 1.4rem;
-    }
-
-
-    /* footer */
-    footer .footer-logo img {
-        width: 40vw;
     }
 }
 

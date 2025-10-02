@@ -1,7 +1,9 @@
 /* container */
 
 /* about-us */
-.about-us-wrap {}
+.about-us-wrap {
+  padding-bottom:100px;
+}
 
 .about-us {
   /* position: relative; */
@@ -168,13 +170,8 @@
 
 .vision-wrap {
   background: #f3f3f3;
+  padding-bottom:100px;
 }
-
-.vision-wrap .section-title {
-  /* margin-bottom: 50px; */
-}
-
-.vision-icon {}
 
 .accord-wrap {
   max-width: 1420px;
