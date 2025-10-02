@@ -116,13 +116,16 @@ section {
 /* product-wrap */
 .product-wrap {
     max-width: 1600px;
-    height: 1000px;
+   
     margin: 0 auto;
 }
 
 .product-list-wrap {
     /* arrow list 부모 */
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product {
@@ -162,7 +165,7 @@ section {
     /* 해상도 고려해서 단위를 4의 배수로 하기 */
     padding: 3.8rem;
     font-size: 1.4rem;
-    width: 50rem;
+    /* width: 50rem; */
 }
 
 .product-list>li .text-box .kind {

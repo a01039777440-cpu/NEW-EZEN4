@@ -26,23 +26,49 @@ var swiper = new Swiper(".main-slider", {
         el: ".swiper-pagination",
         clickable: true,
     },
+
+     
 });
 
+
+
+
+//product
 var swiper2 = new Swiper(".product", {
     loop: true,
     centeredSlides: true,
     autoplay: {
-        delay: 3000
+        delay: 3000,
+        disableOnInteraction: false,
     },
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
+     centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable: false,
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
+    },
+
+      breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            centeredSlides: false
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            centeredSlides: false,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            centeredSlides: true,
+        },
     },
 });
 // 프로모션 비디오 컨트롤
@@ -85,3 +111,4 @@ prevBtn.addEventListener("click", function () {
 nextBtn.addEventListener("click", function () {
     mainVideo.currentTime += 2;
 })
+
