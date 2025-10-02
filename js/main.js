@@ -54,17 +54,13 @@ var swiper2 = new Swiper(".product", {
     },
 
       breakpoints: {
+    
         640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            centeredSlides: false
-        },
-        768: {
             slidesPerView: 2,
             spaceBetween: 20,
             centeredSlides: false,
         },
-        1024: {
+        1028: {
             slidesPerView: 3,
             spaceBetween: 50,
             centeredSlides: true,
