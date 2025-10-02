@@ -1,8 +1,4 @@
 @media (max-width: 1200px) {
-    .inner {
-        max-width: 100%;
-        padding: 0 40px;
-    }
 
     .search a {
 
@@ -39,10 +35,7 @@
 
 /* (992px 이하) */
 @media (max-width: 992px) {
-    .inner {
-        padding: 0 30px;
-    }
-
+   
     .search a {
         width: 90%;
         padding: 15px 25px;
@@ -124,10 +117,7 @@
 
 /* (768px 이하) */
 @media (max-width: 768px) {
-    .inner {
-        padding: 0 20px;
-    }
-
+  
     .search a {
 
         img {
@@ -275,9 +265,7 @@
 
 /* (480px 이하) */
 @media (max-width: 480px) {
-    .inner {
-        padding: 0 15px;
-    }
+    
 
     .search input {
         flex: 1;
