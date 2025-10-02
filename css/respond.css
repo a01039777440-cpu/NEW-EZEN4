@@ -121,13 +121,15 @@
         /* left: 0; */
         left: -100%;
         z-index: 100;
-
+        
     }
 
     .closeBtn {
         display: block;
     }
-
+    .main-menu:hover .depth1 {
+        display: none;
+    }
     .main-menu {
         display: block;
         width: 70%;
@@ -161,7 +163,7 @@
     }
 
     .depth1 {
-        display: block;
+        display: none;
         position: static;
         line-height: 2;
         transform: unset;
@@ -183,6 +185,8 @@
     .scd-list>li>a .scd-title span {
         display: none;
     }
+
+
 }
 
 /* 768 */
