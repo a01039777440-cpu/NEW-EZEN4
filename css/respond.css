@@ -75,9 +75,7 @@
         padding: 5rem 0 3rem;
     }
 
-    .product {
-        height: auto;
-    }
+
 
     .product-arrow-list {
         display: none;
@@ -244,12 +242,12 @@
     }
 
     .product-list {
-        gap: 2rem;
+        gap: 8rem;
     }
 
     .product-list>li,
     .product-list>.active {
-        flex: 0 0 50%;
+        /* flex: 0 0 50%; */
         /* border: 1px solid blue; */
     }
 
@@ -347,11 +345,19 @@
     }
 
     .product-list>li {
+        max-width: 90%;
+        margin: 0 auto;
         border-radius: 2rem;
     }
 
+    
     .product-list>li .text-box {
         padding: 2rem;
+    }
+
+    .product-list-wrap .swiper-button-prev,
+    .product-list-wrap .swiper-button-next {
+        display: none;
     }
 
     .news {
@@ -405,28 +411,42 @@
         font-size: 3rem;
     }
 
+
     /* product안에 제목 : 엘사반정 크기 절반 / 위아래 여백 절반 */
     .product-list>li .text-box .product-title {
         font-size: 2rem;
         margin: 1.5rem;
     }
 
-    /* 뉴스 안쪽 여백 줄이기 / 요소들간에 여백 줄이기 */
-    .news-list>li {
-        padding: 8rem 3rem;
+    .product-list {
+        gap: 11%;
     }
 
-    /* 버튼 60%로 줄이기 */
-    .news-list>li .more-btn {
-        right: -10px;
+    .product-list-wrap .swiper-button-prev,
+    .product-list-wrap .swiper-button-next {
+        display: none;
     }
 
-    .more-btn>a>img {
-        width: 80%;
-    }
 
-    /* footer 위 하얀 여백 절반 */
-    footer {
-        padding-top: 3rem;
-    }
+}
+
+
+
+/* 뉴스 안쪽 여백 줄이기 / 요소들간에 여백 줄이기 */
+.news-list>li {
+    padding: 8rem 3rem;
+}
+
+/* 버튼 60%로 줄이기 */
+.news-list>li .more-btn {
+    right: -10px;
+}
+
+.more-btn>a>img {
+    width: 80%;
+}
+
+/* footer 위 하얀 여백 절반 */
+footer {
+    padding-top: 3rem;
 }
