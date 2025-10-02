@@ -75,6 +75,13 @@
         padding: 5rem 0 3rem;
     }
 
+.product-list .swiper-slide {
+ 
+    transform: scale(0.8);
+}
+
+.product-list .swiper-slide-active {
+    transform: scale(1.0);
 
 
     .product-arrow-list {
@@ -188,6 +195,13 @@
 
 
 }
+
+.product-list .swiper-slide {
+    transform: scale(1);
+}
+    
+
+  
 
 /* 768 */
 @media screen and (max-width:768px) {
@@ -430,6 +444,10 @@
     .product-list-wrap .swiper-button-next {
         display: none;
     }
+   
+    .product-list .swiper-slide {
+    transform: scale(0.7);
+}
 
 
 }
