@@ -27,17 +27,21 @@ fetch('header.html')
         eng.addEventListener("click", function () {
             langText.textContent = "ENG"
         })
-        // 햄버거 버튼
+
+        // 반응형 햄버거 버튼
         let hamBtn = document.querySelector('.ham-btn');
+        let nav = document.querySelector('nav');
+        let closeBtn = document.querySelector('.closeBtn');
         hamBtn.addEventListener("click", function () {
             nav.style.display = "block"
             nav.style.left = "0"
         })
-        let closeBtn = document.querySelector('.closeBtn');
-        let nav = document.querySelector('nav');
-        closeBtn.addEventListener("click", function (e) {
-            console.log(closeBtn)
+        closeBtn.addEventListener("click", function () {
             nav.style.display = "none"
+            
+            if (nav.offsetWidth > "1025px") {
+                nav.style.display = "block"
+            }
         })
 
 

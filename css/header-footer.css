@@ -1,6 +1,5 @@
 /* header */
 header {
-    /* padding: 13px 0; */
     position: fixed;
     z-index: 10000;
     background: #fff;
@@ -41,6 +40,9 @@ header .inner {
 .main-menu {
     display: flex;
     gap: 8rem;
+}
+nav.active{
+    display: none;
 }
 
 .main-menu:after {
