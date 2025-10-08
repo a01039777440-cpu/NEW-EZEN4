@@ -9,8 +9,8 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
     .main-menu {
-        display: flex;
         gap: 5rem;
     }
 
@@ -93,26 +93,26 @@
         transform: scale(1.0);
 
 
-    .product-arrow-list {
-        display: none;
-    }
+        .product-arrow-list {
+            display: none;
+        }
 
-    .promotion-movie {
-        width: 100%;
-    }
+        .promotion-movie {
+            width: 100%;
+        }
 
-    .scd-wrap::before {
-        display: none;
-    }
+        .scd-wrap::before {
+            display: none;
+        }
 
-    .scd-list>li>a {
-        text-align: center;
-    }
+        .scd-list>li>a {
+            text-align: center;
+        }
 
-    .footer .inner {
-        padding: 4rem 6rem;
+        .footer .inner {
+            padding: 4rem 6rem;
+        }
     }
-}
 }
 
 @media screen and (max-width:1024px) {
@@ -129,7 +129,7 @@
         font-size: 4rem;
     }
 
-    
+
 
     /* 1.제거하기 */
     nav {
@@ -146,16 +146,11 @@
         display: block;
     }
 
-    .main-menu:hover .depth1 {
-        display: none;
-    }
-
     .main-menu {
         display: block;
         width: 70%;
         height: 100%;
         max-width: 700px;
-        min-width: 320px;
         background: #fff;
         overflow-y: auto;
     }
@@ -178,16 +173,15 @@
         background: url(../images/icon-down.svg) no-repeat 90% center;
     }
 
-    .main-menu>.active>a {
+    .main-menu a.active {
         background-image: url(../images/icon-up.svg);
     }
 
     .depth1 {
-        display: none;
         position: static;
-        line-height: 2;
-        transform: unset;
-        text-indent: 1.2rem;
+        text-align: left;
+        text-indent: 30px;
+        transition: 0.3s;
     }
 
     .gnb-wrap .gnb-list .ham-btn {
@@ -205,7 +199,6 @@
     .scd-list>li>a .scd-title {
         font-size: 2.8rem;
         margin: 3rem 0;
-        /* border: 1px solid red; */
     }
 
     .scd-list>li>a .scd-title span {
@@ -320,7 +313,6 @@
         display: block;
         text-align: center;
         padding: 4rem 16px;
-        /* border: 1px solid blue; */
     }
 
     .footer-right {
@@ -351,11 +343,6 @@
 }
 
 @media screen and (max-width:640px) {
-    header {
-        /* padding: 1rem 0; */
-        /* line-height: 50px; */
-    }
-
     .logo {
         width: 40vw;
     }
@@ -374,7 +361,6 @@
         border-radius: 2rem;
     }
 
-    
     .product-list>li .text-box {
         padding: 2rem;
     }
@@ -399,7 +385,6 @@
     }
 
     .scd-list {
-        /* display: block; */
         flex-direction: column;
         gap: 2rem;
     }

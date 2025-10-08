@@ -1,5 +1,5 @@
 
-// 최상단 슬라이더
+/**  최상단 슬라이더 */
 var swiper = new Swiper(".main-slider", {
     effect: "fade",
     loop: true,
@@ -30,7 +30,7 @@ sliderImg.forEach((img, index) => {
     img.style.backgroundImage = `url('${imagePaths[imageIndex]}')`;
 })
 
-//product
+/** product */
 var swiper2 = new Swiper(".product", {
     loop: true,
     centeredSlides: true,
@@ -40,7 +40,7 @@ var swiper2 = new Swiper(".product", {
     },
     slidesPerView: 1,
     spaceBetween: 20,
-     centeredSlides: true,
+    centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: false,
@@ -50,7 +50,7 @@ var swiper2 = new Swiper(".product", {
         prevEl: ".swiper-button-prev"
     },
 
-      breakpoints: {
+    breakpoints: {
 
         640: {
             slidesPerView: 2,
@@ -65,7 +65,7 @@ var swiper2 = new Swiper(".product", {
     },
 });
 
-// 프로모션 비디오 컨트롤
+/**  프로모션 비디오 컨트롤 */
 let mainVideo = document.querySelector(".promotion-movie video");
 let controlList = document.querySelector(".video-control-btn-wrap");
 let bigBtn = document.querySelector(".bigPlayBtn");
@@ -106,7 +106,7 @@ nextBtn.addEventListener("click", function () {
     mainVideo.currentTime += 2;
 })
 
-// Aside 바로가기 버튼
+/** Aside 바로가기 버튼 */
 let qMenus = document.querySelectorAll(".aside-menu>li>a");
 let qSections = document.querySelectorAll("section");
 qMenus.forEach((m, i) => {
@@ -116,7 +116,6 @@ qMenus.forEach((m, i) => {
         // 섹션의 위치값
         let topPos = qSections[i].offsetTop;
         console.log(topPos);
-
         // 이동시기키
         window.scrollTo({
             // 위치
@@ -127,7 +126,7 @@ qMenus.forEach((m, i) => {
     })
 })
 
-// 메인 퀵메뉴 클래스 바꾸기
+/**  메인 퀵메뉴 클래스 바꾸기 */
 let quickBtns = document.querySelectorAll('.aside-menu>li>a');
 quickBtns.forEach(qBtn => {
     qBtn.addEventListener('click', () => {
@@ -136,5 +135,30 @@ quickBtns.forEach(qBtn => {
     })
 })
 
-
-
+/**  메인화면 마우스휠로 vh기준 옮기기 */
+// 마우스휠 이벤트 발생경우 스크롤 위치 
+let wheelMouseTop = 0; // 섹션영역 저장 변수
+let wheelSections = document.querySelectorAll("section"); // 풋터영역 저장 변수
+let wheelFooter = document.querySelector("footer"); // 무브위치 Array 
+let moveAreas = [...wheelSections, wheelFooter];
+// console.log(moveAreas);
+moveAreas.forEach((area, i, arr) => {
+    console.log(area.offsetTop);
+    area.addEventListener("wheel", (e) => {
+        console.log(e)
+        let delta = e.deltaY || -e.wheelDelta;
+        if (delta > 0) {
+            if (arr[i + 0]) {
+                moveTop = arr[i + 1].offsetTop;
+            }
+        } else {
+            if (arr[i - 1]) {
+                moveTop = arr[i - 1].offsetTop;
+            }
+        }
+        window.scrollTo({
+            top: moveTop,
+            behavior: "smooth"
+        })
+    })
+})
