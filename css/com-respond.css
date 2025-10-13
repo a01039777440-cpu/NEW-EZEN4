@@ -197,11 +197,6 @@
     .accord-list>div {
         width: 90px;
     }
-
-    /* footer */
-    footer .inner {
-        padding: 4rem 6rem;
-    }
 }
 
 
@@ -487,23 +482,6 @@
     .accord-list .active .num-btn {
         display: none;
     }
-
-
-    /* footer */
-    footer .inner {
-        display: block;
-        text-align: center;
-        padding: 4rem 16px;
-    }
-
-    .footer-right {
-        margin-top: 20px;
-        align-items: center;
-    }
-
-    .footer-right .footer-menu {
-        gap: 2rem;
-    }
 }
 
 
@@ -636,22 +614,6 @@
 
 /* 500 */
 @media screen and (max-width:500px) {
-    header {
-        padding: 0 10px;
-    }
-
-    .logo {
-        width: 40vw;
-    }
-
-    .gnb-wrap {
-        gap: 1rem;
-    }
-
-    .lang span {
-        display: none;
-    }
-
     /* about us */
 
     .about-us-list .sub-text {
@@ -734,12 +696,6 @@
 
     .accord-list .active .vision-content {
         font-size: 1.4rem;
-    }
-
-
-    /* footer */
-    footer .footer-logo img {
-        width: 40vw;
     }
 }
 
