@@ -3,10 +3,8 @@
 :root{
     /* 메인컬러 */
     --main-color:#f13737;
-    /* 메인글자색 */
     /* 설명글자색 */
     --sub-text-color:#6f6f6f;
-    
     /* 제목글자크기 */
     --title-size:6.4rem;
     /* 중간제목 */
@@ -22,7 +20,6 @@
     max-width: 1600px;
     margin: 0 auto;    
     padding: 0 16px;
-    /* background-color: rgba(0,0,255,0.2); */
 }
 
 /* sub 공통 */
@@ -112,8 +109,8 @@
 }
 
 .main-slider-wrap .swiper-pagination-bullet{
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     background-color: #fff;
     margin: 30px;
     opacity: 1;
@@ -122,8 +119,8 @@
     background-color: var(--main-color);
     /* opacity: .6; */
     width: 60px;
-    height: 16px;
-    border-radius: 16px;
+    height: 12px;
+    border-radius: 12px;
 }
 .main-slider-wrap .swiper-pagination-bullets.swiper-pagination-horizontal{
     width: auto;
