@@ -114,7 +114,7 @@ qMenus.forEach((m, i) => {
         e.preventDefault();
 
         // 섹션의 위치값
-        let topPos = qSections[i].offsetTop;
+        let topPos = qSections[i].getBoundingClientRect().top+window.scrollY;
         console.log(topPos);
         // 이동시기키
         window.scrollTo({
@@ -149,11 +149,13 @@ moveAreas.forEach((area, i, arr) => {
         let delta = e.deltaY || -e.wheelDelta;
         if (delta > 0) {
             if (arr[i + 0]) {
-                moveTop = arr[i + 1].offsetTop;
+                // moveTop = arr[i + 1].offsetTop;
+                moveTop = arr[i + 1].getBoundingClientRect().top+window.scrollY;
             }
         } else {
             if (arr[i - 1]) {
-                moveTop = arr[i - 1].offsetTop;
+                // moveTop = arr[i - 1].offsetTop;
+                moveTop = arr[i - 1].getBoundingClientRect().top+window.scrollY;
             }
         }
         window.scrollTo({
