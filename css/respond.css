@@ -417,7 +417,6 @@
     /* product안에 제목 : 엘사반정 크기 절반 / 위아래 여백 절반 */
     .product-list>li .text-box .product-title {
         font-size: 2rem;
-        /* margin: 1.5rem; */
     }
 }
 
