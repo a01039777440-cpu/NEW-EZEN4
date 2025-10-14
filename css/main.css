@@ -521,7 +521,7 @@ section {
     z-index: 1;
 }
 
-.aside-menu>li {
+.aside-menu>li>a {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -533,11 +533,11 @@ section {
     text-shadow: 1px 1px 3px #fff;
 }
 
-.aside-menu>li.active {
+.aside-menu>li>a.active {
     color: var(--main-color);
 }
 
-.aside-menu>li::after {
+.aside-menu>li>a::after {
     content: "";
     display: none;
     width: 12px;
@@ -546,7 +546,7 @@ section {
     border-radius: 50%;
 }
 
-.aside-menu>li.active::after {
+.aside-menu>li> .active::after {
     display: block;
 }
 
