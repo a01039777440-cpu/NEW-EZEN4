@@ -106,53 +106,61 @@ nextBtn.addEventListener("click", function () {
     mainVideo.currentTime += 2;
 })
 
-let currentIndex = 0;
+/** Aside 바로가기 버튼 */
+let qMenus = document.querySelectorAll(".aside-menu>li>a");
+let qSections = document.querySelectorAll("section");
+qMenus.forEach((m, i) => {
+    m.addEventListener("click", (e) => {
+        e.preventDefault();
+        
+        // 섹션의 위치값
+        let topPos = qSections[i].getBoundingClientRect().top + window.scrollY;
+        console.log(topPos);
+        // 이동시기키
+        window.scrollTo({
+            // 위치
+            top: topPos,
+            // 동작
+            behavior: "smooth"
+        })
+    })
+})
 
+/**  메인 퀵메뉴 클래스 바꾸기 */
 let quickBtns = document.querySelectorAll('.aside-menu>li>a');
-let wheelSections = document.querySelectorAll("section");
-let wheelFooter = document.querySelector("footer");
+quickBtns.forEach(qBtn => {
+    qBtn.addEventListener('click', () => {
+        quickBtns.forEach(q => q.classList.remove('active'));
+        qBtn.classList.add('active');
+    })
+})
+
+/**  메인화면 마우스휠로 vh기준 옮기기 */
+// 마우스휠 이벤트 발생경우 스크롤 위치 
+let wheelMouseTop = 0; // 섹션영역 저장 변수
+let wheelSections = document.querySelectorAll("section"); // 풋터영역 저장 변수
+let wheelFooter = document.querySelector("footer"); // 무브위치 Array 
 let moveAreas = [...wheelSections, wheelFooter];
-
-/** 공통 스크롤 함수 */
-function scrollToSection(index) {
-    if (!moveAreas[index]) return;
-
-    currentIndex = index;
-    let topPos = moveAreas[index].getBoundingClientRect().top + window.scrollY;
-
-    window.scrollTo({
-        top: topPos,
-        behavior: "smooth"
-    });
-
-    quickBtns.forEach(btn => btn.classList.remove('active'));
-    if (quickBtns[index]) {
-        quickBtns[index].classList.add('active');
-    }
-}
-
-/** 버튼 클릭 시 */
-quickBtns.forEach((qBtn, i) => {
-    qBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        scrollToSection(i);
-    });
-});
-
-// 첫 번째 버튼 활성화
-if (quickBtns[0]) quickBtns[0].classList.add('active');
-
-/** 마우스 휠 시 */
+// console.log(moveAreas);
 moveAreas.forEach((area, i, arr) => {
+    console.log(area.offsetTop);
     area.addEventListener("wheel", (e) => {
-        e.preventDefault();
-
+        console.log(e)
         let delta = e.deltaY || -e.wheelDelta;
-
-        if (delta > 0 && i < arr.length - 1) {
-            scrollToSection(i + 1);
-        } else if (delta < 0 && i > 0) {
-            scrollToSection(i - 1);
+        if (delta > 0) {
+            if (arr[i + 1]) {
+                // moveTop = arr[i + 1].offsetTop;
+                moveTop = arr[i + 1].getBoundingClientRect().top + window.scrollY;
+            }
+        } else {
+            if (arr[i - 1]) {
+                // moveTop = arr[i - 1].offsetTop;
+                moveTop = arr[i - 1].getBoundingClientRect().top + window.scrollY;
+            }
         }
-    });
-});
+        window.scrollTo({
+            top: moveTop,
+            behavior: "smooth"
+        })
+    })
+})
