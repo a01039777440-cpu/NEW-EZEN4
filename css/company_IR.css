@@ -1,15 +1,11 @@
-
-
 .container {
     max-width: 1600px;
-     background: #f5f5f5;
     padding: 20px;
     font-size: 12px;
     margin: 0 auto;
 }
 
 .header {
-    background: #f8f8f8;
     padding: 10px 15px;
     border-bottom: 2px solid #e0e0e0;
     display: flex;
@@ -18,7 +14,7 @@
 }
 
 .header-date {
-    font-size: 11px;
+    font-size: 14px;
     color: #666;
 }
 
@@ -36,7 +32,7 @@
 }
 
 .section-header {
-    background:rgba(99,99,99,0.6);
+    background: rgba(99, 99, 99, 0.6);
     color: white;
     height: 40px;
     font-size: 13px;
@@ -45,10 +41,13 @@
     border-radius: 8px 8px 0 0;
 
     span {
-        padding-top:10px;
+        padding-top: 10px;
     }
 
-    .text{padding-top:15px}
+    .text {
+        padding-top: 12px;
+        font-size: 16px;
+    }
 
     img {
         padding: 0px 10px;
@@ -59,6 +58,8 @@
 .section-content {
     padding: 15px;
 }
+
+
 
 /* 주가정보 스타일 */
 .stock-info {
@@ -135,11 +136,11 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 table th {
-    background:rgba(255, 38, 38, 0.1);
+    background: rgba(255, 38, 38, 0.1);
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
@@ -158,8 +159,8 @@ table tr:hover {
 }
 
 .price-table th {
-    background: rgba(255, 38, 38,0.1);
-    
+    background: rgba(255, 38, 38, 0.1);
+
 }
 
 .price-table td:first-child {
@@ -173,15 +174,15 @@ table tr:hover {
 }
 
 .hoga-table td {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .sell-row {
-    background:rgba(99,99,99,0.1);
+    background: rgba(99, 99, 99, 0.1);
 }
 
 .buy-row {
-    background:  #fff5f5;
+    background: #fff5f5;
 }
 
 /* 시간대별체결가 */
@@ -192,11 +193,11 @@ table tr:hover {
 
 /* 회원사별거래 */
 .member-table th {
-    background: rgba(255, 38, 38,0.1);
+    background: rgba(255, 38, 38, 0.1);
 }
 
 .member-table td {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 /* 일자별시세 - 전체 너비 */
@@ -209,13 +210,13 @@ table tr:hover {
 }
 
 .daily-table th {
-    background: rgba(255, 38, 38,0.1);
-   
-    font-size: 11px;
+    background: rgba(255, 38, 38, 0.1);
+
+    font-size: 14px;
 }
 
 .daily-table td {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 /* 반응형 */
