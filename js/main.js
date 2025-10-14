@@ -39,7 +39,7 @@ var swiper2 = new Swiper(".product", {
         disableOnInteraction: false,
     },
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 30,
     centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
@@ -54,12 +54,12 @@ var swiper2 = new Swiper(".product", {
 
         640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 30,
             centeredSlides: false,
         },
-        1028: {
+        1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 40,
             centeredSlides: true,
         },
     },
