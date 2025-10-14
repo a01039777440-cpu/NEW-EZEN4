@@ -39,7 +39,7 @@ var swiper2 = new Swiper(".product", {
         disableOnInteraction: false,
     },
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 30,
     centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
@@ -59,7 +59,7 @@ var swiper2 = new Swiper(".product", {
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 40,
             centeredSlides: true,
         },
     },
@@ -105,6 +105,90 @@ prevBtn.addEventListener("click", function () {
 nextBtn.addEventListener("click", function () {
     mainVideo.currentTime += 2;
 })
+
+// let currentIndex = 0;
+// /** Aside 바로가기 버튼 */
+// // let qMenus = document.querySelectorAll(".aside-menu>li>a");
+// // let qSections = document.querySelectorAll("section");
+// // qMenus.forEach((m, i) => {
+// //     m.addEventListener("click", (e) => {
+// //         e.preventDefault();
+
+// //         currentIndex = i;
+// //         // 섹션의 위치값
+// //         let topPos = qSections[i].offsetTop;
+// //         console.log(topPos);
+// //         // 이동시기키
+// //         window.scrollTo({
+// //             // 위치
+// //             top: topPos,
+// //             // 동작
+// //             behavior: "smooth"
+// //         })
+// //     })
+// // })
+
+// /**  메인 퀵메뉴 클래스 바꾸기 */
+// let quickBtns = document.querySelectorAll('.aside-menu>li>a');
+// quickBtns.forEach((qBtn, i, arr) => {
+//     qBtn.addEventListener('click', (e) => {
+//         console.log(qBtn, i, arr)
+//         quickBtns.forEach(q => q.classList.remove('active'));
+//         qBtn.classList.add('active');
+//         currentIndex = i;
+//         // 섹션의 위치값
+//         let topPos = moveAreas[i].getBoundingClientRect().top + window.scrollY;
+//         console.log(topPos);
+//         // 이동시기키
+//         window.scrollTo({
+//             // 위치
+//             top: topPos,
+//             // 동작
+//             behavior: "smooth"
+//         })
+//     })
+//     arr[0].classList.add('active');
+// })
+
+// /**  메인화면 마우스휠로 vh기준 옮기기 */
+// // 마우스휠 이벤트 발생경우 스크롤 위치 
+// let wheelMouseTop = 0; // 섹션영역 저장 변수
+// let wheelSections = document.querySelectorAll("section"); // 풋터영역 저장 변수
+// let wheelFooter = document.querySelector("footer"); // 무브위치 Array 
+// let moveAreas = [...wheelSections, wheelFooter];
+// // console.log(moveAreas);
+// moveAreas.forEach((area, i, arr) => {
+//     console.log(area)
+//     console.log(area.offsetTop);
+//     console.log(area.getBoundingClientRect().top);
+//     area.addEventListener("wheel", (e) => {
+//         // console.log(e)
+//         currentIndex = i;
+//         let delta = e.deltaY || -e.wheelDelta;
+//         if (delta > 0) {
+//             if (arr[currentIndex + 1]) {
+//                 // moveTop = arr[i + 1].offsetTop;
+//                 moveTop = arr[currentIndex + 1].getBoundingClientRect().top + window.scrollY;
+//             }
+//         } else {
+//             if (arr[currentIndex - 1]) {
+//                 // moveTop = arr[i - 1].offsetTop;
+//                 moveTop = arr[currentIndex - 1].getBoundingClientRect().top + window.scrollY;
+//             }
+//         }
+//         window.scrollTo({
+//             top: moveTop,
+//             behavior: "smooth"
+//         })
+
+
+//         quickBtns.forEach(q => q.classList.remove('active'));
+//         if (quickBtns[currentIndex]) {
+//             quickBtns[currentIndex].classList.add('active');
+//         }
+//         console.log(currentIndex);
+//     })
+// })
 
 let currentIndex = 0;
 
