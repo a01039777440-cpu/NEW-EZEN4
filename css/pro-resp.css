@@ -31,11 +31,19 @@
     .product-list>li .b {
         font-size: 1.2rem;
     }
+
+    .num .number a {
+        font-size: 1.4rem;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+    }
+
 }
 
 /* (992px 이하) */
 @media (max-width: 992px) {
-   
+
     .search a {
         width: 90%;
         padding: 15px 25px;
@@ -86,6 +94,23 @@
         margin-top: 80px;
     }
 
+    .num .number a {
+        font-size: 1.3rem;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .num img.one {
+        width: 23px;
+        height: 23px;
+    }
+
+    .num img.two {
+        width: 20px;
+        height: 20px;
+    }
+
     .popup1,
     .popup2,
     .popup3,
@@ -117,7 +142,7 @@
 
 /* (768px 이하) */
 @media (max-width: 768px) {
-  
+
     .search a {
 
         img {
@@ -171,6 +196,17 @@
         font-size: 1.8rem;
         width: 45px;
         height: 45px;
+    }
+
+    .num>ul {
+        gap: 8px;
+    }
+
+    .num .number a {
+        font-size: 1.2rem;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
     }
 
     /* 모바일 팝업 */
@@ -265,7 +301,7 @@
 
 /* (480px 이하) */
 @media (max-width: 480px) {
-    
+
 
     .search input {
         flex: 1;
@@ -308,6 +344,23 @@
         font-size: 1.6rem;
         width: 40px;
         height: 40px;
+    }
+
+    .num>ul {
+        gap: 6px;
+    }
+
+    .num .number a {
+        font-size: 1.1rem;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .num img.one,
+    .num img.two {
+        width: 18px;
+        height: 18px;
     }
 
     .popup1,
@@ -378,6 +431,17 @@
 
     .product-list>li .b {
         font-size: 1rem;
+    }
+
+    .num>ul {
+        gap: 5px;
+    }
+
+    .num .number a {
+        font-size: 1rem;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
     }
 
     .popup1,
